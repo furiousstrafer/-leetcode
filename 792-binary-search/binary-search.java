@@ -5,13 +5,12 @@ class Solution {
         while(L <= R){
             int M = (L + R) / 2;
 
-            if(nums[M] == target){
+            if(nums[M] == target)
                 return M;
-            }else if(target < nums[M]){
+            else if(target < nums[M])
                 R = M - 1;
-            }else{
+            else
                 L = M + 1;
-            }
         }
         return -1;
     }
